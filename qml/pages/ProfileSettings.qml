@@ -80,7 +80,8 @@ Dialog {
                 onTextChanged:{ if(tProfile.text.length>0){diaProfileSettings.canAccept=true}else{diaProfileSettings.canAccept=false}
                 }
 
-                validator: RegExpValidator { regExp: /^[0-9,a-zA-Z,\s]{1,}$/ }
+                //validator: RegExpValidator { regExp: /^[0-9,a-zA-Z,\s]{1,}$/ }
+                validator: RegExpValidator { regExp: /.{1,15}/ }
             }
 
             Button {
