@@ -387,7 +387,7 @@ Page {
                         color: Theme.secondaryColor
                         anchors.horizontalCenter: parent.horizontalCenter
                         font.pixelSize: Theme.fontSizeSmall
-                        font.family: Theme.fontSizeSmall
+
                     }
 
 
@@ -406,7 +406,7 @@ Page {
                             //color: Theme.secondaryColor
                             anchors.centerIn: parent
                             font.pixelSize: Theme.fontSizeSmall
-                            font.family: Theme.fontSizeSmall
+
                             width: (parent.width-(2*Theme.paddingLarge))
                         }
                     }
