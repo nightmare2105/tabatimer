@@ -315,7 +315,8 @@ bool Tabata::checkState(TabaStates &state,bool overwrite){
 }
 
 void Tabata::tabataDing(void){
-    mediaPlayer->play();
+    if(!profiles[profileActive].mute)
+        mediaPlayer->play();
 }
 
 int Tabata::calcSeconds(int secs, int mins, int hours){
