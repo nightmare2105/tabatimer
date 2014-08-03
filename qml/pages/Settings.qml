@@ -170,7 +170,7 @@ Dialog {
 
 
             Label{
-                text: "Version: 1.5-1"
+                text: "Version: " + APP_VERSION
                 color: Theme.secondaryColor
                 anchors.horizontalCenter: parent.horizontalCenter
                 font.pixelSize: Theme.fontSizeSmall

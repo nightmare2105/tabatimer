@@ -32,3 +32,4 @@ OTHER_FILES += qml/harbour-tabatimer.qml \
 HEADERS += \
     src/tabata.h
 
+DEFINES += APP_VERSION=\\\"$$VERSION\\\"

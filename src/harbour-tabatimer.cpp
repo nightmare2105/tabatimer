@@ -52,6 +52,7 @@ int main(int argc, char *argv[])
 
     Tabata *tabata1=new Tabata(view);
     view->rootContext()->setContextProperty("tabata1", tabata1);
+    view->rootContext()->setContextProperty("APP_VERSION", APP_VERSION);
     //Tabata::declareQML();
    // qmlRegisterSingletonType<Tabata>("harbour-tabatimer.Tabata",1,0,"tabata",tabata_singletontype_provider);
     view->setSource(SailfishApp::pathTo("qml/harbour-tabatimer.qml"));
