@@ -13,10 +13,10 @@ Name:       harbour-tabatimer
 %{!?qtc_make:%define qtc_make make}
 %{?qtc_builddir:%define _builddir %qtc_builddir}
 Summary:    Tabatimer
-Version:    1.5
+Version:    1.5.1
 Release:    1
 Group:      Qt/Qt
-License:    don't copy
+License:    LGPL2.1
 URL:        http://example.org/
 Source0:    %{name}-%{version}.tar.bz2
 Source100:  harbour-tabatimer.yaml
