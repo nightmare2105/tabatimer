@@ -1,10 +1,10 @@
 Name: harbour-tabatimer
 Summary: Tabatimer
-Version: 1.5
+Version: 1.5.1
 Release: 1
 Group: Qt/Qt
 URL: http://example.org/
-License: don't copy
+License: LGPL2.1
 Sources:
 - '%{name}-%{version}.tar.bz2'
 Description: |+
