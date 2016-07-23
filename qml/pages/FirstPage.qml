@@ -184,8 +184,8 @@ Page {
                     ProgressCircleBase{
                         id: progress
 
-                        height: 240
-                        width: 240
+                        height: parent.height * 0.45
+                        width: height
                         visible: true
                         backgroundColor: Theme.highlightDimmerColor
                         progressColor: Theme.highlightColor
@@ -197,13 +197,14 @@ Page {
                             text: tabata1.getAllSecondsLeft()
                             anchors.centerIn: parent
                             color: Theme.primaryColor
+                            font.pixelSize: Theme.fontSizeExtraLarge
                         }
                         ProgressCircleBase{
                             id: progressSecs
                             backgroundColor: Theme.highlightColor
                             progressColor: Theme.highlightDimmerColor
-                            height: 220
-                            width: 220
+                            height: parent.height * 0.9
+                            width: height
                             visible: ! tabata1.getMinutesLeft()>0 ? true : false;
                             anchors.centerIn: parent
                         }
@@ -211,8 +212,8 @@ Page {
                             id: progressMins
                             backgroundColor: Theme.highlightColor
                             progressColor: Theme.highlightDimmerColor
-                            height: 200
-                            width: 200
+                            height: parent.height * 0.8
+                            width: height
                             visible: ! tabata1.getMinutesLeft()>0 ? true : false;
                             anchors.centerIn: parent
                         }
@@ -220,8 +221,8 @@ Page {
                             id: progressHours
                             backgroundColor: Theme.highlightColor
                             progressColor: Theme.highlightDimmerColor
-                            height: 180
-                            width: 180
+                            height: parent.height * 0.7
+                            width: height
                             visible: ! tabata1.getHoursLeft()>0 ? true : false;
                             anchors.centerIn: parent
                         }
