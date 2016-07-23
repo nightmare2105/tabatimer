@@ -11,6 +11,7 @@
 #include <QString>
 #include <QtMultimedia/QMediaPlayer>
 #include <QtMultimedia/QMediaPlaylist>
+#include <QtMultimedia/QSoundEffect>
 
 #include <sailfishapp.h>
 
@@ -33,9 +34,8 @@ private:
     QSettings *setting;
     QDBusMessage dbm_blankpause_start;
     QDBusMessage dbm_blankpause_cancel;
-
-    QMediaPlayer *mediaPlayer;
-    QMediaPlaylist *playList;
+    
+    QSoundEffect soundeffect;
 
     const static int maxProfiles=10;
     bool warnSleep;

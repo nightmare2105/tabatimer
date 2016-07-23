@@ -9,10 +9,9 @@ Tabata::Tabata(QObject *parent) :
     t_timer= new QTimer(this);
     connect(t_timer,SIGNAL(timeout()), this, SLOT(next()));
 
-    mediaPlayer=new QMediaPlayer();
-    playList=new QMediaPlaylist();
-    playList->addMedia(SailfishApp::pathTo("qml/pages/ding.mp3"));
-    mediaPlayer->setPlaylist(playList);
+    soundeffect.setSource(SailfishApp::pathTo("qml/pages/ding.wav"));
+    soundeffect.setLoopCount(0);
+    soundeffect.setVolume(0.50f);
 
     t_timer->setInterval(1000);
     t_timer->stop();
@@ -316,7 +315,9 @@ bool Tabata::checkState(TabaStates &state,bool overwrite){
 
 void Tabata::tabataDing(void){
     if(!profiles[profileActive].mute)
-        mediaPlayer->play();
+    {
+        soundeffect.play();
+    }
 }
 
 int Tabata::calcSeconds(int secs, int mins, int hours){
