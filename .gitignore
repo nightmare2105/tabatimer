@@ -2,3 +2,4 @@ $ cat .gitignore
 *.pro.*
 *.user*
 *.user
+*.bak

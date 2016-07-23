@@ -13,7 +13,7 @@ Name:       harbour-tabatimer
 %{!?qtc_make:%define qtc_make make}
 %{?qtc_builddir:%define _builddir %qtc_builddir}
 Summary:    Tabatimer
-Version:    1.5.1
+Version:    1.6.1
 Release:    1
 Group:      Qt/Qt
 License:    LGPL2.1
@@ -70,7 +70,8 @@ desktop-file-install --delete-original       \
 
 %files
 %defattr(-,root,root,-)
-%{_bindir}
+%defattr(644,root,root,-)
+%attr(655,-,-) %{_bindir}
 %{_datadir}/%{name}/qml
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/icons/hicolor/86x86/apps/%{name}.png
