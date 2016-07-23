@@ -9,8 +9,6 @@
 #include <QQmlEngine>
 #include <QSettings>
 #include <QString>
-#include <QtMultimedia/QMediaPlayer>
-#include <QtMultimedia/QMediaPlaylist>
 #include <QtMultimedia/QSoundEffect>
 
 #include <sailfishapp.h>

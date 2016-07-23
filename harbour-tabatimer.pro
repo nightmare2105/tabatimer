@@ -25,7 +25,7 @@ OTHER_FILES += qml/harbour-tabatimer.qml \
     qml/pages/TimePickerSeconds.qml \
     qml/pages/TimePickerSeconds.png \
     qml/pages/TimeDialog.qml \
-    qml/pages/ding.mp3 \
+    qml/pages/Ding.wav \
     qml/pages/Profiles.qml \
     qml/pages/ProfileSettings.qml
 
