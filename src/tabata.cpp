@@ -92,7 +92,7 @@ Q_INVOKABLE int Tabata::next(void){
     }
     int i_end=getProfileAllSeconds(i_state,profileActive);
     i_time++;
-    if(i_time>=(i_end-1)){
+    if(i_time>=(i_end)){
         emit tabataDing();
     }
     if(i_time>=i_end){

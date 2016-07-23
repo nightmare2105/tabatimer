@@ -41,7 +41,7 @@ import Sailfish.Silica 1.0
 
     Dialog {
         id: diaTime
-        anchors.fill: parent
+        //anchors.fill: parent
         canAccept: true
         property string infotext: ""
         property int hour: 0
