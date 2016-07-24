@@ -11,7 +11,7 @@ Tabata::Tabata(QObject *parent) :
 
     soundeffect.setSource(SailfishApp::pathTo("qml/pages/ding.wav"));
     soundeffect.setLoopCount(0);
-    soundeffect.setVolume(0.100f);
+    soundeffect.setVolume(1.0f);
 
     t_timer->setInterval(1000);
     t_timer->stop();
